@@ -1,0 +1,45 @@
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.heading {
+    text-align: center;
+    font-size: large;
+    align-items: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.input-card {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin: 10px;
+
+}
+
+.card {
+    margin: 10px;
+}

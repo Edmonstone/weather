@@ -1,0 +1,37 @@
+<div class="display" *ngIf="weatherData">
+  <h3 class="heading">Weather in {{ weatherData.name }}, {{ weatherData.sys.country }}</h3>
+  <p class="card">Temperature: {{ weatherData.main.temp }} &deg;C</p>
+  <p class="card">Humidity: {{ weatherData.main.humidity }}%</p>
+  <p class="card">Description: {{ weatherData.weather[0].description }}</p>
+</div>
+
+<div class="form" *ngIf="!weatherData">
+  <div class="header">
+
+    <h1 >Enter City and Country:</h1>
+  </div>
+  <div  class="input-container">
+    <form>
+      <div class="input-card">
+  
+      <label>
+        City:
+        <input type="text" [(ngModel)]="city" name="city">
+      </label>
+    </div>
+      <br>
+      <div class="input-card">
+  
+        <label>
+          Country:
+          <input type="text" [(ngModel)]="country" name="country">
+        </label>
+      </div>
+      <br>
+      <div class="input-card">
+  
+        <button type="button" (click)="getWeatherData()">Get Weather</button>
+      </div>
+    </form>
+  </div>
+</div>

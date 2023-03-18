@@ -1,0 +1,10 @@
+<h2 class="heading">Login</h2>
+
+<form class="form"(ngSubmit)="onSubmit()">
+    <div class="container">
+
+        <label class = "label" for="email">Email:</label>
+        <input class = "field" type="text" id="email" name="email" [(ngModel)]="email">
+        <button class = "button" type="submit">Log In</button>
+    </div>
+</form>

@@ -1,0 +1,8 @@
+<div *ngIf="isLoggedIn; else login">
+  <h1>Weather App</h1>
+  <app-weather></app-weather>
+</div>
+
+<ng-template #login>
+  <app-login (login)="onLogin($event)"></app-login>
+</ng-template>
